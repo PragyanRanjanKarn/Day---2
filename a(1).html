@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="f1(4,10)">Click Me</button>
+    <p id="i1"></p>
+    <p id="i2"></p>
+    <p id="i3"></p>
+
+
+    <script>
+        /* 
+        -Big Programs can be dividided into small chunks/ parts 
+        -each of these parts is known as functin. 
+        -Function makes program easy to manage, understand, less erroneous, reuseable 
+        -once a function is created it can be used as many times as we want. 
+        -Function can be group of one or more statement. 
+        -Call/invoke the function to run it otheerwise it willnot work.
+        -Arguement are the variable which we write in () of function
+        */
+        function f1(a, b)//a,b are parameters, to which values will be passed when we call the function
+        //The values which we pass to a and are called arguument
+        {
+            document.getElementById("i1").innerHTML = a;
+            document.getElementById("i2").innerHTML = b;
+            document.getElementById("i3").innerHTML = "Result = " + (a % b);
+        }
+
+        function f2(x, y, z) {
+            var a = x + y + z;
+            return a;
+        }
+        var res = f2(5, 10, 15)
+        document.write(res)
+    </script>
+</body>
+
+</html>
